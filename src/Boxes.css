@@ -1,0 +1,43 @@
+.small {
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    margin: 0 auto;
+}
+
+.medium {
+    height: 200px;
+    width: 200px;
+    background-color: yellow;
+    margin:0 auto;
+}
+
+.big {
+    height: 300px;
+    width: 300px;
+    background-color: green;
+    margin: 0 auto;
+}
+
+div {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    }
+
+#root {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 50px auto;
+    gap: 5px;
+}
+
+p {
+    color: rgb(228, 129, 23);
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 800;
+    font-style: bold;
+} 
