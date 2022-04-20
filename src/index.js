@@ -1,11 +1,15 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
+ Props_1
 import Text from "./Text";
+import Boxes from "./Boxes";
+ main
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
     <React.StrictMode>
+ Props_1
         <Text
             text="Different text"
             textColor="red"
@@ -30,5 +34,10 @@ root.render(
             textSize="30px"
             underline={true}
         />
+
+        <Boxes titleSize={10} label="First box" cssClass="small" />
+        <Boxes titleSize={20} label="Second box" cssClass="medium" />
+        <Boxes titleSize={30} label="Third box" cssClass="big" />
+ main
     </React.StrictMode>,
 );
