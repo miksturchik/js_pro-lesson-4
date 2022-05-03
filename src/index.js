@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
+import Checkbox from "./Checkbox.js";
 
 import Text from "./Text";
 import Boxes from "./Boxes";
@@ -36,6 +37,9 @@ root.render(
         <Boxes titleSize={10} label="First box" cssClass="small" />
         <Boxes titleSize={20} label="Second box" cssClass="medium" />
         <Boxes titleSize={30} label="Third box" cssClass="big" />
+
         <Cyclic />
+        <Checkbox boxSize={30} />
+
     </React.StrictMode>,
 );
