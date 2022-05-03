@@ -4,10 +4,13 @@ import "./index.css";
 
 import Text from "./Text";
 import Boxes from "./Boxes";
+import SayHi from "./SayHi";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
     <React.StrictMode>
+        <SayHi />
+
         <Text
             text="Different text"
             textColor="red"
