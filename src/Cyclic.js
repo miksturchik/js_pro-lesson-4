@@ -1,9 +1,10 @@
 import { useState } from "react";
 import "./Cyclic.css";
 
+const repeatArrey = ["⃙", "⃚ ", "⃘"];
+
 function Cyclic() {
     const [count, setCount] = useState(0);
-    const repeatArrey = ["⃙", "⃚ ", "⃘"];
 
     return (
         <div>
