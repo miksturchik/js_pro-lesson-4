@@ -5,11 +5,14 @@ import Checkbox from "./Checkbox.js";
 
 import Text from "./Text";
 import Boxes from "./Boxes";
+import UserName from "./UserList";
 import Cyclic from "./Cyclic";
+
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
     <React.StrictMode>
+        <UserName />
         <Text
             text="Different text"
             textColor="red"
