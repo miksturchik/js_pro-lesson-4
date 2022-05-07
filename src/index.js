@@ -6,6 +6,8 @@ import Checkbox from "./Checkbox.js";
 import Text from "./Text";
 import Boxes from "./Boxes";
 import UserName from "./UserList";
+import Cyclic from "./Cyclic";
+
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -39,6 +41,8 @@ root.render(
         <Boxes titleSize={20} label="Second box" cssClass="medium" />
         <Boxes titleSize={30} label="Third box" cssClass="big" />
 
+        <Cyclic />
         <Checkbox boxSize={30} />
+
     </React.StrictMode>,
 );
