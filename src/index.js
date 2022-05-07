@@ -6,10 +6,14 @@ import Checkbox from "./Checkbox.js";
 import Text from "./Text";
 import Boxes from "./Boxes";
 import Cyclic from "./Cyclic";
+import CounterClass from "./CounterClass";
+import CounterFunction from "./CounterFunction";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
     <React.StrictMode>
+        <CounterClass />
+        <CounterFunction />
         <Text
             text="Different text"
             textColor="red"
@@ -40,6 +44,5 @@ root.render(
 
         <Cyclic />
         <Checkbox boxSize={30} />
-
     </React.StrictMode>,
 );
