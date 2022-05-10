@@ -8,13 +8,9 @@ import Boxes from "./Boxes";
 import SayHi from "./SayHi";
 import UserName from "./UserList";
 import Cyclic from "./Cyclic";
-<<<<<<< HEAD:src/index.tsx
-import Login from "./Login";
-=======
+
 import CounterClass from "./CounterClass";
 import CounterFunction from "./CounterFunction";
-
->>>>>>> 020316900712491bcc02d7e9d59c23c18c28b1cd:src/index.js
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -53,9 +49,5 @@ root.render(
 
         <Cyclic />
         <Checkbox boxSize={30} />
-<<<<<<< HEAD:src/index.tsx
-        <Login />
-=======
->>>>>>> 020316900712491bcc02d7e9d59c23c18c28b1cd:src/index.js
     </React.StrictMode>,
 );
