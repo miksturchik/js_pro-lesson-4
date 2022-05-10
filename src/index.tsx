@@ -7,7 +7,7 @@ import Text from "./Text";
 import Boxes from "./Boxes";
 import UserName from "./UserList";
 import Cyclic from "./Cyclic";
-import Login from "./Login";
+import Login from "./Llogin";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
