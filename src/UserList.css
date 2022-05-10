@@ -1,0 +1,18 @@
+
+
+.card{
+    height: 60px;
+    width: 230px;
+    font-size: 20px;
+    margin: 3px auto;
+    color: yellow;
+border: 1px solid;
+
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 250px;
+    margin: 50px auto;
+}

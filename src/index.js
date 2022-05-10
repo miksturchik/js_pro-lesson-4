@@ -1,16 +1,24 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
+import Checkbox from "./Checkbox.js";
 
 import Text from "./Text";
 import Boxes from "./Boxes";
 import SayHi from "./SayHi";
+import UserName from "./UserList";
+import Cyclic from "./Cyclic";
+import CounterClass from "./CounterClass";
+import CounterFunction from "./CounterFunction";
+
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
     <React.StrictMode>
         <SayHi />
-
+        <CounterClass />
+        <CounterFunction />
+        <UserName />
         <Text
             text="Different text"
             textColor="red"
@@ -38,5 +46,8 @@ root.render(
         <Boxes titleSize={10} label="First box" cssClass="small" />
         <Boxes titleSize={20} label="Second box" cssClass="medium" />
         <Boxes titleSize={30} label="Third box" cssClass="big" />
+
+        <Cyclic />
+        <Checkbox boxSize={30} />
     </React.StrictMode>,
 );
