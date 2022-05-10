@@ -1,13 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-import Checkbox from "./Checkbox.js";
+import Checkbox from "./Checkbox";
 
 import Text from "./Text";
 import Boxes from "./Boxes";
 import UserName from "./UserList";
 import Cyclic from "./Cyclic";
-
+import Login from "./Login";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -43,6 +43,6 @@ root.render(
 
         <Cyclic />
         <Checkbox boxSize={30} />
-
+        <Login />
     </React.StrictMode>,
 );
