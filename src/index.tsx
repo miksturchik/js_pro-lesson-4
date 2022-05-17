@@ -11,11 +11,13 @@ import Cyclic from "./Cyclic";
 
 import CounterClass from "./CounterClass";
 import CounterFunction from "./CounterFunction";
+import Login from "./Login";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
     <React.StrictMode>
-        <SayHi />
+        <Login />
+
         <CounterClass />
         <CounterFunction />
         <UserName />
@@ -49,5 +51,6 @@ root.render(
 
         <Cyclic />
         <Checkbox boxSize={30} />
+        <SayHi />
     </React.StrictMode>,
 );
