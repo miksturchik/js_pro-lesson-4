@@ -12,10 +12,13 @@ import Cyclic from "./Cyclic";
 import CounterClass from "./CounterClass";
 import CounterFunction from "./CounterFunction";
 import Login from "./Login";
+import Names from "./RandomName";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
     <React.StrictMode>
+        <Names />
+
         <Login />
 
         <CounterClass />
