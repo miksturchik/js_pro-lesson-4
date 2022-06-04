@@ -45,13 +45,13 @@ const TimePicker: FC = () => {
         <div className="container">
             <div className="wrapper">
                 <button onClick={takeAnHour}>-</button>
-                <h2>{hours === 0 ? "00" : hours}</h2>
+                <h2>{hours > 9 ? hours : `0${hours}`}</h2>
                 <button onClick={giveAnHour}>+</button>
             </div>
             <div className="wrapper">:</div>
             <div className="wrapper">
                 <button onClick={takeAminutes}>-</button>
-                <h2>{minutes === 0 ? "00" : minutes}</h2>
+                <h2>{minutes > 9 ? minutes : `0${minutes}`}</h2>
                 <button onClick={giveAminutes}>+</button>
             </div>
         </div>
