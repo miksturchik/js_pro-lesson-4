@@ -26,3 +26,8 @@ border: double;
 
 
   }
+  ul {
+
+    list-style: none;
+
+  }

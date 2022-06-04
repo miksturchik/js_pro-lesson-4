@@ -17,29 +17,41 @@ const data = [
     "Ava",
 ];
 
+interface namesList {
+    name: string;
+    id: number;
+}
+
 const Names: FC = () => {
-    const [state, setState] = useState<string[]>([
-        "James",
-        "Oliver",
-        "Benjamin",
+    const [state, setState] = useState<namesList[]>([
+        {
+            name: "James",
+            id: 1,
+        },
+        {
+            name: "Oliver",
+            id: 2,
+        },
+        {
+            name: "Benjamin",
+            id: 3,
+        },
     ]);
 
     const addingName = () => {
         const index = Math.floor(Math.random() * 13);
-        const newPeople = data[index];
-        const newArray = [...state, newPeople];
+        const newArray = [
+            ...state,
+            { name: data[index], id: state.length + 1 },
+        ];
         setState(newArray);
     };
 
     return (
         <div className="list-wrapper">
             <ul>
-                {state.map((name, index) => {
-                    return (
-                        <div key={index}>
-                            <li className="name">{name}</li>
-                        </div>
-                    );
+                {state.map((user) => {
+                    return <li key={user.id}>{user.name}</li>;
                 })}
                 <button className="list-btn" onClick={addingName}>
                     Add Name
