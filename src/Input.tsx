@@ -43,7 +43,7 @@ const Input: FC<PropsInputs> = () => {
                 type="number"
                 value={numberInput}
                 onChange={(event) => {
-                    onChange(event, setNumber, Number);
+                    onChange(event, setNumber, String);
                 }}
             />
             <label htmlFor="checkbox">checkbox</label>
@@ -63,7 +63,7 @@ const Input: FC<PropsInputs> = () => {
                 type="range"
                 value={rangeInput}
                 onChange={(event) => {
-                    onChange(event, setRange, Number);
+                    onChange(event, setRange, String);
                 }}
             />
             <label htmlFor="date">date {dateInput}</label>
