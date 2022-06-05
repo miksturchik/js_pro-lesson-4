@@ -76,7 +76,9 @@ const Input: FC<PropsInputs> = () => {
                 }}
             />
             <label>list</label>
+
             <select
+                value={onselect}
                 onChange={(event) => {
                     onChange(event, setList, String);
                 }}
@@ -92,17 +94,19 @@ const Input: FC<PropsInputs> = () => {
                         name="radio"
                         type="radio"
                         value="one"
+                        checked={radioInput === "one"}
                         onChange={(event) => {
                             onChange(event, setRadio, String);
                         }}
                     />
                     one
                 </label>
-                <label htmlFor="radio2">
+                <label htmlFor="radio1">
                     <input
                         name="radio"
                         type="radio"
                         value="two"
+                        checked={radioInput === "two"}
                         onChange={(event) => {
                             onChange(event, setRadio, String);
                         }}
@@ -114,6 +118,7 @@ const Input: FC<PropsInputs> = () => {
                         name="radio"
                         type="radio"
                         value="three"
+                        checked={radioInput === "three"}
                         onChange={(event) => {
                             onChange(event, setRadio, String);
                         }}
