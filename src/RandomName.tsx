@@ -17,13 +17,13 @@ const data = [
     "Ava",
 ];
 
-interface namesList {
+interface Name {
     name: string;
     id: number;
 }
 
 const Names: FC = () => {
-    const [state, setState] = useState<namesList[]>([
+    const [state, setState] = useState<Name[]>([
         {
             name: "James",
             id: 1,
