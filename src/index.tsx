@@ -14,10 +14,17 @@ import CounterFunction from "./CounterFunction";
 import Login from "./Login";
 import Names from "./RandomName";
 
+import TimePicker from "./TimePicker";
+import SpinnerControl from "./Spinner";
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
     <React.StrictMode>
+
         <Names />
+
+        <TimePicker />
+        <SpinnerControl />
 
         <Login />
 
